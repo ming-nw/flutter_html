@@ -736,9 +736,9 @@ class HtmlParser extends StatelessWidget {
     } else if (tree.style.display == Display.LIST_ITEM && tree.style.listStyleType != null) {
       String marker = "";
       switch (tree.style.listStyleType!) {
-        case ListStyleType.NONE:
-          tree.style.markerContent = '';
-          break;
+        // case ListStyleType.NONE:
+        //   tree.style.markerContent = '';
+        //   break;
         case ListStyleType.CIRCLE:
           marker = '○';
           break;
